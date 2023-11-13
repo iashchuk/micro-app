@@ -1,0 +1,10 @@
+{
+    "imports": {
+        "react": "https://cdn.jsdelivr.net/npm/@esm-bundle/react/system/react.development.js",
+        "react-router-dom": "https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.1.2/react-router-dom.js",
+        "react-is": "https://cdnjs.cloudflare.com/ajax/libs/react-is/17.0.2/umd/react-is.production.min.js",
+        "styled-components": "https://cdnjs.cloudflare.com/ajax/libs/styled-components/5.1.0/styled-components.min.js",
+        "browse": "http://localhost:3001/main.js",
+        "restaurant": "http://localhost:3002/main.js"
+    }
+}

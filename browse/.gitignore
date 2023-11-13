@@ -1,0 +1,18 @@
+# IDE
+.idea
+.atom
+.vscode
+
+# Build
+static
+build
+cache
+stats.json
+
+# Misc
+node_modules
+
+.npmrc
+
+.env.local
+.eslintcache
