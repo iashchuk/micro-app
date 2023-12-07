@@ -13,7 +13,7 @@ module.exports = {
     };
 
     config.output.path = path.resolve(__dirname, "build");
-    config.output.libraryTarget = "system";
+    // config.output.libraryTarget = "system";
 
     config.plugins.push(
       new CopyPlugin([
@@ -24,7 +24,10 @@ module.exports = {
       ])
     );
 
-    config.externals = ["react", "react-router-dom", "browse", "restaurant"];
+    config.externals = {
+      browse: 'promise System.import("browse");',
+      restaurant: 'promise System.import("restaurant");',
+    };
 
     return config;
   },
