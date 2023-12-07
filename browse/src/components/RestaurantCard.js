@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const StyledLink = styled(Link)`
   color: inherit;

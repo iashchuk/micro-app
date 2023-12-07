@@ -5,16 +5,16 @@ import AppHeader from "./AppHeader";
 import About from "./About";
 
 import * as browse from "browse";
-import * as restaurant from "restaurant";
+// import * as restaurant from "restaurant";
 
-const MarkdownPreview1 = browse.App;
-const MarkdownPreview2 = restaurant.App;
+// const MarkdownPreview1 = browse.App;
+// const MarkdownPreview2 = restaurant.App;
 
 let numRestaurants = 0;
 
-// const MarkdownPreview1 = React.lazy(() =>
-//   import("browse").then((module) => ({ default: module.App }))
-// );
+const MarkdownPreview1 = React.lazy(() =>
+  browse.then((module) => ({ default: module.App }))
+);
 // const MarkdownPreview2 = React.lazy(() =>
 //   import("restaurant").then((module) => ({ default: module.App }))
 // );
@@ -44,7 +44,7 @@ const App = () => (
           path="/restaurant/:id"
           render={() => (
             <React.Suspense fallback={<div>Loading</div>}>
-              <MarkdownPreview2 />
+              {/* <MarkdownPreview2 /> */}
             </React.Suspense>
           )}
         />
@@ -53,7 +53,7 @@ const App = () => (
           path="/test"
           render={() => (
             <React.Suspense fallback={<div>Loading</div>}>
-              <MarkdownPreview2 />
+              {/* <MarkdownPreview2 /> */}
             </React.Suspense>
           )}
         />
